@@ -1,5 +1,6 @@
 # CSCI-33a Final-Project Proposal
 
+Outlines of Parts
 1. WeCountWords description of purpose and audience
 1. Frontend vs. Backend
 1. User Journey Map
