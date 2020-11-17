@@ -8,4 +8,4 @@ Outlines of Parts
 1. Frontend: each user will have a profile page and a progress tracking page
 
 ### Development Stack
-* Django, Pytohn, JavaScript, HTML, CSS
+* Django, Python, JavaScript, HTML, CSS
