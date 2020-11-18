@@ -16,5 +16,5 @@ Outlines of Parts
 * https://www.wecountwords.com
 
 ### References
-How to share data between Django Apps
-* https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
+* How to share data between Django Apps
+  - https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
