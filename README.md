@@ -4,8 +4,8 @@ Outlines of Parts
 1. WeCountWords description of purpose and audience
 1. Frontend vs. Backend
 1. User Journey Map
-1. Backend: input articles and updcoming listings review and cleanup of comments
-1. Frontend: each user will have a profile page and a progress tracking page
+1. Backend: input content and updcoming events
+1. Frontend: each user will have a member page and profile page profile page. All members and non-members have access to Selected Content.
 
 ### Milestones
 
