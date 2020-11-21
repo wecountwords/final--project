@@ -16,6 +16,12 @@ Outlines of Parts
 * https://www.wecountwords.com
 
 ### References
+* CSCI E-33a course lecture, notes, and past assignments
+* Django documentation and Python documentation
+  - https://docs.djangoproject.com/en/3.1/
+  - https://docs.python.org/3/
+* W3Schools HTML, CSS, and JavaScript references
+  - https://www.w3schools.com/
 * How to share data between Django Apps
   - https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
 * Writing CRUD APIs with Django
