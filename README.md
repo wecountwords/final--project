@@ -18,3 +18,5 @@ Outlines of Parts
 ### References
 * How to share data between Django Apps
   - https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
+* Writing CRUD APIs with Django
+  - https://dev.to/nobleobioma/build-a-crud-django-rest-api-46kc
