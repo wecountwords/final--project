@@ -29,3 +29,5 @@ Outlines of Parts
 * API Design and Naming Conventions
   - https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
   - https://cloud.google.com/apis/design/naming_convention
+* Fonts
+  - https://fonts.google.com/specimen/Special+Elite?query=special#standard-styles
