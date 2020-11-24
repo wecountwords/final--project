@@ -26,5 +26,6 @@ Outlines of Parts
   - https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
 * Google Charts
   - https://developers.google.com/chart/interactive/docs
-* Writing CRUD APIs with Django
-  - https://dev.to/nobleobioma/build-a-crud-django-rest-api-46kc
+* API Design and Naming Conventions
+  - https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+  - https://cloud.google.com/apis/design/naming_convention
