@@ -15,6 +15,14 @@ Outlines of Parts
 ### Prototype
 * https://www.wecountwords.com
 
+### Implementation Notes: WeCountWords console for content developers
+1. Add new Artiles, Events, or URLs
+   1. _Add_ links at the top of the page ad a new content item to the datastore
+   2. Open item: to edit a pre-published content item, navigate to _Articles and Events for Editing_ list and select the item to edit. 
+   3. Content items are not editable after they are published. Links are not editable after they are submitted to the datastore.
+   4. Open item: delete content item
+   
+
 ### References
 * CSCI E-33a course lecture, notes, and past assignments
 * Django documentation and Python documentation
