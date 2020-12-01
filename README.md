@@ -41,8 +41,9 @@ Outlines of Parts
 * Django documentation and Python documentation
   - https://docs.djangoproject.com/en/3.1/
   - https://docs.python.org/3/
-* W3Schools HTML, CSS, and JavaScript references
+* W3Schools HTML, CSS, and JavaScript references including JavaScript regular expression references
   - https://www.w3schools.com/
+  - https://developer.mozilla.org/en-US/docs/Web
 * How to share data between Django Apps
   - https://stackoverflow.com/questions/42424955/how-to-exchange-data-between-apps-in-django-using-the-database
 * Google Charts
