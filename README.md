@@ -21,6 +21,8 @@ Outlines of Parts
   - Open item: to edit a pre-published content item, navigate to _Articles and Events for Editing_ list and select the item to edit. 
   - Content items are not editable after they are published. Links are not editable after they are submitted to the datastore.
   - Open item: delete content item
+* Member Profile Page
+  - Project name is not editable. Non-paying members have one project with a name of the form "<username> Project 0". Selecting and hosting multiple writing projects is an open item for a future iteration.
    
 
 ### References
