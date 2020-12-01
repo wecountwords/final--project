@@ -23,6 +23,7 @@ Outlines of Parts
   - Members can change the email associated with their account.
   - In addition, the profile page will display a default project name: <username> Project 1.
   - Once the required information has been added adn successfully saved, members are able to navigate to their project landing page.
+  - The member must be logged-in to access the profile page.
   - Open items to be implemented in the future (not included in the final project): changing passwords, adding more than one project, communication preferences for reminders and emails
 
 ### Implementation Notes: WeCountWords console for content developers
