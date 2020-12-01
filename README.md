@@ -15,6 +15,16 @@ Outlines of Parts
 ### Prototype
 * https://www.wecountwords.com
 
+### Application Specification
+* Profile Page
+  - Upon registration, a member is taken to their profile page where they will add their writing goals and author name for their current project.
+  - Members are required to add a goal for (1) number of words per writing session they will commit to writing and (2) number of days each week they will commit to writing each week.
+  - Members have the option of putting in a first and last name for the writing project
+  - Members can change the email associated with their account.
+  - In addition, the profile page will display a default project name: <username> Project 1.
+  - Once the required information has been added adn successfully saved, members are able to navigate to their project landing page.
+  - Open items to be implemented in the future (not included in the final project): changing passwords, adding more than one project, communication preferences for reminders and emails
+
 ### Implementation Notes: WeCountWords console for content developers
 * Add new Artiles, Events, or URLs
   - _Add_ links at the top of the page ad a new content item to the datastore
