@@ -52,3 +52,5 @@ Outlines of Parts
   - https://cloud.google.com/apis/design/naming_convention
 * Fonts
   - https://fonts.google.com/specimen/Special+Elite?query=special#standard-styles
+* HTML validation reference
+  - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api
