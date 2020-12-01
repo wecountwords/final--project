@@ -55,3 +55,5 @@ Outlines of Parts
   - https://fonts.google.com/specimen/Special+Elite?query=special#standard-styles
 * HTML validation reference
   - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api
+* Python date functions
+  - https://stackoverflow.com/questions/32490629/getting-todays-date-in-yyyy-mm-dd-in-python
