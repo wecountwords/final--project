@@ -57,3 +57,4 @@ Outlines of Parts
   - https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api
 * Python date functions
   - https://stackoverflow.com/questions/32490629/getting-todays-date-in-yyyy-mm-dd-in-python
+  - https://stackoverflow.com/questions/441147/how-to-subtract-a-day-from-a-date
