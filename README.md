@@ -9,10 +9,11 @@ WeCountWords, for the purposes of the final project, represents the application 
 1. Build the first iteration of the selected content section of the site (now named curated content) for both WCW members and non-members
 
 ### Project Proposal vs. Outcome: GOOD (what will be accomplished no matter what)
-1. Basic member site including a member page with 2 data visualizations updated real-time with word counts - DONE
+1. Basic member site - word count - DONE
    - Members are able to add their daily word count before or after login.
+1. Basic member site - visualizations - DONE
    - Upon login, members are presented with 2 writing visualizations for tracking their progress and analyzing days they are most productive.
-   - Each time the member accesses their page, data is retrieved to update the Total Words table.
+   - Each time the member accesses their page, data is retrieved to update the Total Words table visualization.
    - Words Written by Day of Week, as a historical view, changes each day rather than each time a member adds words. 
    - Data visualizations are drawn using Google Charts (https://developers.google.com/chart)
 1. Profile page for users to setup their writing goals - DONE
