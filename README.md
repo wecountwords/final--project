@@ -57,40 +57,40 @@ Apps in the _wecount_ project:
 1. Full authentication and authorization is not yet fully implemented. Registration and login is managed on the member site. This is to test member dependent features.
 2. For the content developer site, login is through the member site. Logout is ok from either site. 
 
-### Files: models, urls.py, admin.py, setting.py
+### Files: urls.py, admin.py, setting.py, and models.py
 1. wecount > urls.py : contains the top-level url patterns for WeCountWords WCW Console, and the Django admin app
    - main WCW app:  path('', include('words.urls')),
    - content developer app:  path('console/', include('wcconsole.urls')),
    - django admin app:  path('admin/', admin.site.urls),
     
 1. wcconsole > urls.py : contains the url paths for the contene developer site.
-- View paths
-  - path("", views.index, name="console"),
-  - path("faq", views.faq_view, name="console_faq"),  
-  - path("logout", views.logout_view, name="console_logout"),
+   - View paths
+     - path("", views.index, name="console"),
+     - path("faq", views.faq_view, name="console_faq"),  
+     - path("logout", views.logout_view, name="console_logout"),
 
-- API paths
-  - path("article", views.article, name="article"),
-  - path("event", views.event, name="event"),
-  - path("submiturl", views.submiturl, name="submiturl"),
-  - path("url/<int:urlid>", views.get_url_by_id, name="get_url"),
+   - API paths
+     - path("article", views.article, name="article"),
+     - path("event", views.event, name="event"),
+     - path("submiturl", views.submiturl, name="submiturl"),
+     - path("url/<int:urlid>", views.get_url_by_id, name="get_url"),
 
 1. words > urls.py : contains the url paths for the main member app
-- View paths
-  - path("", views.index, name="index"),
-  - path("project/<str:username>", views.project_view, name="project"),
-  - path("lists", views.content_view, name = "content"),
-  - path("profile", views.profile_view, name = "profile"),
-  - path("login", views.login_view, name="login"),
-  - path("logout", views.logout_view, name="logout"),
-  - path("register", views.register, name="register"),
+   - View paths
+     - path("", views.index, name="index"),
+     - path("project/<str:username>", views.project_view, name="project"),
+     - path("lists", views.content_view, name = "content"),
+     - path("profile", views.profile_view, name = "profile"),
+     - path("login", views.login_view, name="login"),
+     - path("logout", views.logout_view, name="logout"),
+     - path("register", views.register, name="register"),
 
-- API paths
-  - path("profile/<int:userid>", views.update_profile, name="update_profile" ),
-  - path("profile/<int:userid>/member", views.update_member, name="update_member"),
-  - path("wordcount", views.word_count, name="word_count" ),
-  - path("wordcount/<int:userid>/byweekday", views.totals_by_weekday, name="totals_by_weekday"),
-  - path("wordcount/<int:userid>/intervals", views.totals_by_interval, name="totals_by_interval"),
+   - API paths
+     - path("profile/<int:userid>", views.update_profile, name="update_profile" ),
+     - path("profile/<int:userid>/member", views.update_member, name="update_member"),
+     - path("wordcount", views.word_count, name="word_count" ),
+     - path("wordcount/<int:userid>/byweekday", views.totals_by_weekday, name="totals_by_weekday"),
+     - path("wordcount/<int:userid>/intervals", views.totals_by_interval, name="totals_by_interval"),
 
 1. wecount > settings.py
    - added _words_ and _wcconsole_ to the INSTALLED_APPS
@@ -99,13 +99,23 @@ Apps in the _wecount_ project:
  
 1. Django admin is setup on words (member site) app and supports users and user profile. Anything direct model access for content items, other models in either app, is being handled via the django shell app. Intent is that users can be managed through a UI if necessary. Everything else should not need a backend UI to view or manipulate it. If it does, the same admin should be able to successfully handle this through the command line shell.
  
-1.  
+1. Models.py for words
+   - User(AbstractUser): supports some additional fields for our site members including author first, last names, and booleans for future use to designate Content Developers and Content Publisher.  
+   - Profile: stores member goals
+   - History: is the main model and stores each word count submission with a timestamp. This model is used for the input for all visualizations current and planned for the future.
 
+1. Models.py for wecconsole : holds each content item that will be published on the member site
+   - URL : a record for each url content item
+   - Article : a record for blog article content item
+   - Event : a record for each event item
+   - NewThisWeek : a record for each intro statement for new and upcoming content we want to highlight
+   - Published : additional table to track articles that are currently published and thos that are ready to be published - planned for use with new features to do with releasing content in automated batches.
+   - For current features, each content type is associated with the content fields and a state field that indicates the current state of the item. Valid states include "p" for published, "s" for saved, and "a" for archived (synonomous with deleted from the member site). Any item with a state of "p" will be pulled in the data queries that are populating the member site. Any item in other states will not be sent to the member site.
+   - For current features, NewThisWeek is triggered for publication based on the expiry date. An implicit assumption: there will be a small number of these items and the content administrator adds them as they are to be published with a later expirey date than the current item's published expiry date.
 
+### Files: WCW member app: django words app
 
-
-
-
+### Files: WCW content developer app: django wcconsole app
 
 
 ### Additional requirements from final project slide deck
