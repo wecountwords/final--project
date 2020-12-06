@@ -10,25 +10,23 @@ WeCountWords, for the purposes of the final project, represents the application 
 
 ### Project Proposal vs. Outcome: GOOD (what will be accomplished no matter what)
 1. Basic member site including a member page with 2 data visualizations updated real-time with word counts - DONE
-   - Members are able to add their daily word count before or after login
-   - Upon login, members are presented with 2 writing visualizations for tracking their progress and analyzing days they are most productive
-   - Each time the member accesses their page, data is retrieved to update the Total Words table
+   - Members are able to add their daily word count before or after login.
+   - Upon login, members are presented with 2 writing visualizations for tracking their progress and analyzing days they are most productive.
+   - Each time the member accesses their page, data is retrieved to update the Total Words table.
    - Words Written by Day of Week, as a historical view, changes each day rather than each time a member adds words. 
    - Data visualizations are drawn using Google Charts (https://developers.google.com/chart)
 1. Profile page for users to setup their writing goals - DONE
-   - Members are presented with their profile page when they first register on the site and any time after when they click on their username in the top menu bar
-   - Members set their writing goals for words per day and days per week (required)
-   - Member also have the option to add a first and last author nae or update their email address
-1. Selected contect page (Curated Content) - DONE
+   - Members are presented with their profile page when they first register on the site and any time after when they click on their username in the top menu bar once logged in.
+   - Members set their writing goals for words per day and days per week.
+   - Member have the option to add a first and last author name or update their email address.
+1. Selected content page (Curated Content) - DONE
    - The name of the selected content section has changed to Curated Content.
-   - This page is populated with links to relevant organizations, conference, blogs, tools, and so on
+   - This page is populated with links to relevant organizations, conference, blogs, tools, and so on.
    - For the purposes of the project, the important aspects are content layout and ability to populate content from the content development site. 
-1. Basic content developer site to add content (textual only) to the database that will then be published to the Curated Content section of the member site - DONE
-   - From the top nav bar, content developers are able to navigate to various forms to submit new content. 
-   - Add New Event form adds an events that is then published on the member site.
-   - Add URL form submits URLs that are then published in the Curated Content section of the member site.
-   - Add New Article form adds an blog article to the database. Blog content pages on member site are out of scope for the final project.
-   - Update New This Week form submits the intro to the Currated Content Page
+1. Basic content developer app - DONE
+   - Content developers are able to add content (textual only) to the database that will then be published to the Curated Content section of the member site.
+   - From the top nav bar, content developers are able to navigate to various forms to submit new content in the form of URLs, event listings, or blog articles.
+   - Update New This Week form gives conent developers the ability to add an intro title and text to the Curated Content section of WCW.
   
 ### Project Proposal vs. Outcome: BETTER (what do I think can be accomplished in addition to the GOOD features)
 1. On the content developer site: new landing page with a list of existing content and its current state (Saved, Published, Archived) - DONE
