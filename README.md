@@ -29,25 +29,20 @@ WeCountWords, for the purposes of the final project, represents the application 
    - Update New This Week form gives conent developers the ability to add an intro title and text to the Curated Content section of WCW.
   
 ### Project Proposal vs. Outcome: BETTER (what do I think can be accomplished in addition to the GOOD features)
-1. On the content developer site: new landing page with a list of existing content and its current state (Saved, Published, Archived) - DONE
-   - http://127.0.0.1:8000/console
-   - WC Console landing, click on any of the 4 categories: URLs, Event, Articles, Archived Items, to go to the title and state for that article
-1. Ability to select any unpublished item from teh list and take the following actions: edit, save, publish, archive (soft-delete)
+1. On the content developer app: landing page with a content list and current state (saved, published, archived) - DONE
+   - Category list added to the landing page with the following selections: URLs, Events, Articles, Archived Items. Click on any of the categories opens a list of content of that type with the current state.
+1. Ability to select any unpublished item from the list and take the following actions: edit, save, publish, archive (soft-delete)
   - URLs - DONE
-    - By design, URLs are not editable. You can "Remove" one from the member site, thereby archiving it.
-    - By design, URLs are published directly to the site upon submitting a new URL
+    - By design, URLs are not editable. By design, URLs are published directly to the content site and do not go through a save / edit phase.
+    - You can "Remove" one from the member site, thereby archiving it.
   - Events - NOT DONE
   - Articles - NOT DONE
-1. Ability to select a published content from the list, movit it to a Saved state thereby removing it from the published content on the site
-   - URL - DONE
-     - from the URL list in the WCW Console, select any URL and then use the Remove option to archive it
-     - archived URLs are excluded from those that are available to the member site
-   - Events - DONE
-     - from the Event list in the WCW Console, select any event showing as published, and then use the Remove option to archive it
-     - archived Events are excluded from those that are available to the member site
-   - Articles - DONE
-     - from the Article list in the WCW Console, select any article showing as published, and then use the Remove option to archive it
-     - archived Articles are excluded from those that are available to the member site
+1. Ability to select a published content from the list, move it it to a Saved state thereby removing it from the published content on the site - DONE
+   - Only content items in a published ("p") state are make available to the content site.
+   - URLs are published on submit. Use the Remove option to put it into an archive state.
+   - Events and Articles are either saved, published, or archived. 
+     - If the current state is published, set the new state to Saved to remove it from the site. 
+     - From a saved state, the content item can be resaved, archived, or published
   
 ### Project Proposal vs. Outcome: BEST (what I hope to accomplish in addition to the GOOD and BETTER features )
 1.  Add the Daily Word Count in calender format -  not attempted due to time constraints. 
