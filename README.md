@@ -47,12 +47,11 @@ WeCountWords, for the purposes of the final project, represents the application 
 ### Project Proposal vs. Outcome: BEST (what I hope to accomplish in addition to the GOOD and BETTER features )
 1.  Add the Daily Word Count in calender format -  not attempted due to time constraints. 
 
-### Project Details
-Django Project: wecount
-Apps: 
-1. words: member app for WeCountWords
-1. wcconsole: content developer app to support the member app
-1. Django admin console to support user admin (not fully implememted
+### Project Details for the Django _wecount_ project
+Apps in the _wecount_ project: 
+1. _words_: public facing member app for WeCountWords
+1. _wcconsole_: content developer app to support the member app
+1. _Django admin_ console: supports user admin 
 
 ### Other notes:
 1. Full authentication and authorization is not yet fully implemented. Registration and login is managed on the member site. This is to test member dependent features.
