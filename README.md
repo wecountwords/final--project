@@ -3,9 +3,10 @@
 ### Concept
 WeCountWords (WCW) is a virtual writing productivity coach to help writers establish and maintain a daily writing habit. By establishing a habit or practice of writing, writers increase their productivity and ability to complete their projects. WCW helps writers establish writing goals, track progress against their goals, and analyze their progress through data visualizations. In addition, writers are supported through curated content on regional conferences, national organizations, and other articles on the business of writing.
 
-WeCountWords, for the purposes of the final project, is the application framework to support the concept. It is the first iteration beyond the prototype and will serve as the foundation for the first iteration of the publically available app. To this end, the focus on the final project has been two-fold:
+WeCountWords, for the purposes of the final project, is the application framework to support the concept. It is the first iteration beyond the prototype and will serve as the foundation for the first iteration of the publically available app. To this end, the focus on the final project has been three-fold:
 1. Setup a backend for content developers to easily add, update, and remove WCW content: wcw content developer app
-1. Build the first iteration of a working member site such that a member will register, setup a basic profile, and begin tracking their writing productivity via the daily word count: wcw member site for registered users, and both members and non-members will have access to the content sections of WCW
+1. Build the first iteration of a working member site such that a member will register, setup a basic profile, and begin tracking their writing productivity via the daily word count
+1. Build the first iteration of teh selected content section of the site (now named curated content) for both WCW members and non-members
 
 ### Project Proposal vs. Outcome: GOOD (what will be accomplished no matter what)
 1. Basic member site including a member page with 2 data visualizations updated real-time with word counts - DONE
