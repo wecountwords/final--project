@@ -59,7 +59,7 @@ Apps in the _wecount_ project:
 
 ### Files: models, urls.py, admin.py, setting.py
 wecount > urls.py : contains the top-level url patterns for WeCountWords WCW Console, and the Django admin app
-> page:  path('', include('words.urls')),     
+> page:  path('', include('words.urls')),
 > path('console/', include('wcconsole.urls')),
 > path('admin/', admin.site.urls),
     
