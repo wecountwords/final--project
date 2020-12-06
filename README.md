@@ -114,9 +114,55 @@ Apps in the _wecount_ project:
    - For current features, NewThisWeek is triggered for publication based on the expiry date. An implicit assumption: there will be a small number of these items and the content administrator adds them as they are to be published with a later expirey date than the current item's published expiry date.
 
 ### Files: WCW member app: django words app
+1. templates > words
+   - layout.html: member site layout 
+     - top nav bar, logo with link to return to landing page, footer info
+     - imports the stylesheet, google font for the logo and visualizations
+     - sets viewport for responsive design
+     - defines content boxes in the body and head of the app
+   - index.html : landing page 
+   - lists.html : content page
+   - profile.html :
+   - register.html : 
+1. static > words
+1. views.py : contains the django view functions and api functions
+1. utlils.py : contains functions for??
 
 ### Files: WCW content developer app: django wcconsole app
-
+1. templates > wcconsole
+   - console_layout.html > imported by all other wcconsole views except the registration page.
+     - imports the stylesheet
+     - sets the viewport for responsive design
+     - imports bootstrap for supporting the bootstrap components and responsive design handled through the bootstrap components
+     - defines the layout and links for the top and bottom nav menus
+     - defines the conent block
+   - index.html : main app views are managed through the index.html
+     - formated in containers wrapped with div's to identify the function support a single page app for the main console functionality. 
+     - the display is manged by the console.js file through event handlers
+     - some of the layout is managed in the bootstrap component class and some is managed in the console.css file
+     - the following sections have been implemented in this project:
+       - landing page content by category and state lists / sublists 
+       - new URL form
+       - new article form
+       - new event form
+       - new this week message form
+   - faq.html : sample layout. slated for future development. 
+1. static > wcconsole
+   - console.css
+   - console.js
+     - toggles views on llink click
+     - submits each content type to the backend
+     - writes and erases the error message when applicable
+     - opens content from the content lists for updating or removing
+1. views.py renders the following views
+   - index.html + list of content items of status "p" for each type of content item
+   - faq.html sampe for future use
+1. API's to support the wcconsole frontend
+   - submiturl -- submits the url content item to the URL model
+   - article -- submtis the article content item to the Article model
+   - event -- submits an event item to the Event model
+   - get_url_by_id -- helper to retrieve data to populate the URL form
+ 
 
 ### Additional requirements from final project slide deck
 
