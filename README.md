@@ -120,10 +120,19 @@ Apps in the _wecount_ project:
      - imports the stylesheet, google font for the logo and visualizations
      - sets viewport for responsive design
      - defines content boxes in the body and head of the app
-   - index.html : landing page 
-   - lists.html : content page
-   - profile.html :
-   - register.html : 
+   - index.html : landing page with nav bar + 2 visualization
+     - form for adding a daily word count before or after login. form visibility is managed through the JavaScript frontend
+     - chart_box cumulative renders the cumulative metrics across various frames of time
+     - chart_box day_of_week renders the word count by the week day for the last week
+     - imports the javascript loader for the chart and table visualization
+     - container for each visualization where that calls the google chart or table which renders into the view.
+     - calls to the words.js script and the visuals.js script where the visuals.js houses the code from google to render the chart / table views
+   - lists.html : content page that builds out the link lists in various categories
+   - profile.html : contains the forms to support setting up a profile for each member. 
+     - goals form allows the member to establish some writing goals against which we can track writing progress
+     - member info allows the member to add an author name or update their email address
+   - register.html :  standard register from previous assigments with the addition that upon successful submission, the user is taken to the profile page
+   - login.html : standard login page from previous assignments
 1. static > words
 1. views.py : contains the django view functions and api functions
 1. utlils.py : contains functions for??
