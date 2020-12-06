@@ -44,6 +44,7 @@ WeCountWords, for the purposes of the final project, represents the application 
    - Events and Articles are either saved, published, or archived. 
      - If the current state is published, set the new state to Saved to remove it from the site. 
      - From a saved state, the content item can be resaved, archived, or published
+ 1. Note: if changes are made that will impact the items in the list on the console, be sure to reload the page by clicking on the Console link to view the item correctly in the landing page list.
   
 ### Project Proposal vs. Outcome: BEST (what I hope to accomplish in addition to the GOOD and BETTER features )
 1.  Add the Daily Word Count in calender format -  not attempted due to time constraints. 
