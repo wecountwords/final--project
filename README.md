@@ -58,24 +58,22 @@ Apps in the _wecount_ project:
 2. For the content developer site, login is through the member site. Logout is ok from either site. 
 
 ### Files: models, urls.py, admin.py, setting.py
-1. wecount > urls.py : contains the top-level url patterns for WeCountWords WCW Console, and the Django admin app
-   ''''
-   page:  path('', include('words.urls')),     
-   path('console/', include('wcconsole.urls')),
-   path('admin/', admin.site.urls),
-   ''''
+wecount > urls.py : contains the top-level url patterns for WeCountWords WCW Console, and the Django admin app
+> page:  path('', include('words.urls')),     
+> path('console/', include('wcconsole.urls')),
+> path('admin/', admin.site.urls),
     
-1. wcconsole > urls.py : contains the url paths for the contend developer site.
-    View paths
-    path("", views.index, name="console"),
-    path("faq", views.faq_view, name="console_faq"),
-    path("logout", views.logout_view, name="console_logout"),
+wcconsole > urls.py : contains the url paths for the contend developer site.
+> View paths
+> path("", views.index, name="console"),
+> path("faq", views.faq_view, name="console_faq"),
+> path("logout", views.logout_view, name="console_logout"),
 
-    API paths
-    path("article", views.article, name="article"),
-    path("event", views.event, name="event"),
-    path("submiturl", views.submiturl, name="submiturl"),
-    path("url/<int:urlid>", views.get_url_by_id, name="get_url"),
+> API paths
+> path("article", views.article, name="article"),
+> path("event", views.event, name="event"),
+> path("submiturl", views.submiturl, name="submiturl"),
+> path("url/<int:urlid>", views.get_url_by_id, name="get_url"),
 
 1. words > urls.py : contains the url paths for the main member app
     View paths
