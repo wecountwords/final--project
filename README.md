@@ -59,9 +59,9 @@ Apps in the _wecount_ project:
 
 ### Files: models, urls.py, admin.py, setting.py
 1. wecount > urls.py : contains the top-level url patterns for WeCountWords WCW Console, and the Django admin app
-- main WCW app:  path('', include('words.urls')),
-- content developer app:  path('console/', include('wcconsole.urls')),
-- django admin app:  path('admin/', admin.site.urls),
+   - main WCW app:  path('', include('words.urls')),
+   - content developer app:  path('console/', include('wcconsole.urls')),
+   - django admin app:  path('admin/', admin.site.urls),
     
 1. wcconsole > urls.py : contains the url paths for the contene developer site.
 - View paths
@@ -93,9 +93,9 @@ Apps in the _wecount_ project:
   - path("wordcount/<int:userid>/intervals", views.totals_by_interval, name="totals_by_interval"),
 
 1. wecount > settings.py
-- added _words_ and _wcconsole_ to the INSTALLED_APPS
-- added the wecount.url to the ROOT_URLCONF
-- set the user authentication model: AUTH_USER_MODEL = 'words.User'
+   - added _words_ and _wcconsole_ to the INSTALLED_APPS
+   - added the wecount.url to the ROOT_URLCONF
+   - set the user authentication model: AUTH_USER_MODEL = 'words.User'
  
 1. Django admin is setup on words (member site) app and supports users and user profile. Anything direct model access for content items, other models in either app, is being handled via the django shell app. Intent is that users can be managed through a UI if necessary. Everything else should not need a backend UI to view or manipulate it. If it does, the same admin should be able to successfully handle this through the command line shell.
  
