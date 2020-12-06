@@ -14,7 +14,7 @@ WeCountWords, for the purposes of the final project, represents the application 
    - Upon login, members are presented with 2 writing visualizations for tracking their progress and analyzing days they are most productive
    - Each time the member accesses their page, data is retrieved to update the Total Words table
    - Words Written by Day of Week, as a historical view, changes each day rather than each time a member adds words. 
-   - Both visualizations are drawn using Google Charts (https://developers.google.com/chart)
+   - Data visualizations are drawn using Google Charts (https://developers.google.com/chart)
 1. Profile page for users to setup their writing goals - DONE
    - Members are presented with their profile page when they first register on the site and any time after when they click on their username in the top menu bar
    - Members set their writing goals for words per day and days per week (required)
