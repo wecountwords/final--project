@@ -1,4 +1,9 @@
-
-Additional requirements
+Python
+Django
 Bootstrap
 Google Charts (https://developers.google.com/chart)
+Additional Python libraries: re, datetime
+Google fonts
+
+As a web app that is using components from bootstrap, google charts, and google fonts, this app relies on internet access for charts / tables / layout to render correctly.
+The app relies on functions from python datetime libraries and regular expression (re) libraries.
